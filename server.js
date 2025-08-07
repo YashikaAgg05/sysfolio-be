@@ -152,6 +152,8 @@ app.get("/api/portfolio-status", async (req, res) => {
   });
 });
 
+console.log("Ram Ram");
+
 // Sector-wise chart
 app.get("/api/chart-data", (req, res) => {
   const sql = `SELECT sector, SUM(price * quantity) AS total FROM investments GROUP BY sector`;
