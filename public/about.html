@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SYSFOLIO | About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"> </head>
+<body>
+  <div class="container mt-4">
+    <h1 class="text-center">About SYSFOLIO</h1>
+    <nav class="navbar navbar-expand-lg mt-3 px-3 rounded">
+      <a class="navbar-brand" href="index.html">SYSFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="share.html">Share Knowledge</a></li>
+          <li class="nav-item"><a class="nav-link" href="crud.html">Buy Stock</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+        </ul>
+        <button id="toggle-mode" class="btn btn-secondary ms-3">Toggle Mode</button>
+      </div>
+    </nav>
+
+    <div class="section-card card"> <h3>Our Company</h3>
+      <p>SYSFOLIO is a next-gen portfolio management system helping retail investors track and grow their investments smartly.</p>
+
+      <h3>Legacy</h3>
+      <p>Founded in 2025, SYSFOLIO is known for intuitive dashboards and simplified stock tracking features.</p>
+
+      <h3>Developers</h3>
+      <ul>
+        <li>Shantanu Jadhav</li>
+        <li>Team SYSFOLIO</li>
+      </ul>
+
+      <h3>Ratings</h3>
+      <p>⭐ 4.8/5 from over 10,000 users!</p>
+
+      <h3>Contact Us</h3>
+      <p>Email: support@sysfolio.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+  </div>
+  <script>
+    document.getElementById('toggle-mode').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      // Re-render charts to apply dark mode text colors if they exist
+      //updateChartColors();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+/* General Light Theme */
+body {
+  background-color: #e0f2f7; /* Very light blue background */
+  color: #212529; /* Dark text for contrast */
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  font-size: 3rem; /* Example size */
+  font-family: Arial, sans-serif; /* Example font */
+  color: #002b4d; /* Dark navy blue for headings */
+  font-weight: bold;
+}
+
+.container {
+  padding-left: 15px; /* Added padding to align content */
+  padding-right: 15px; /* Added padding to align content */
+}
+
+.card {
+  background-color: #f0f8ff; /* AliceBlue for cards */
+  color: #212529;
+  border-radius: 12px; /* Softer corners */
+  padding: 1.5rem;
+  border: 1px solid #002b4d; /* Navy blue border for cards in light mode */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  margin-bottom: 2rem; /* Increased margin for spacing between cards */
+}
+
+.navbar {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  background-color: #001f3f; /* Deep navy blue navbar */
+  padding: 1rem 1.5rem; /* Consistent padding */
+  border: 1px solid transparent; /* Default transparent border for light mode */
+}
+
+.navbar .nav-link,
+.navbar-brand {
+  color: #87ceeb !important; /* Sky blue text for navbar items */
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #ffd700 !important; /* Yellow accent color for brand */
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #add8e6 !important; /* Lighter blue on hover/active */
+}
+
+h1, h2, h3, h4 {
+  color: #002b4d; /* Dark navy blue for headings */
+}
+
+/* Dark Mode (Adjusted for the new base theme) */
+.dark-mode {
+  background-color: #000a14; /* Even darker blue for true dark mode */
+  color: #f1f1f1;
+}
+
+/* Dark Mode Headings: Make all heading text white in dark mode, except specific ones */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: #FFFFFF !important;
+}
+
+/* Specific override for "Buy Stock" form heading in dark mode */
+.dark-mode form.crud-form h2 {
+  color: #002b4d !important; /* Navy blue for Buy Stock form heading in dark mode */
+}
+
+.dark-mode .card {
+  background-color: #001f3f;
+  color: #fff;
+  border: 1px solid #add8e6; /* Light blue border for cards in dark mode */
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .navbar {
+  background-color: #00172e; /* Slightly lighter navy blue for dark mode navbar */
+  box-shadow: 0 4px 8px rgba(0, 100, 200, 0.05);
+  border: 1px solid #add8e6; /* Light blue border for dark mode navbar */
+}
+
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar-brand {
+  color: #87ceeb !important; /* Sky blue for dark mode nav links */
+}
+
+.dark-mode .nav-link:hover,
+.dark-mode .nav-link.active {
+  color: #add8e6 !important; /* Lighter blue for dark mode hover */
+}
+
+/* Responsive Cards & Tables */
+.card h4, .card h3, .card table {
+  margin-bottom: 0.75rem;
+}
+
+.table thead {
+  background: linear-gradient(90deg, #003366, #0055aa); /* Navy blue gradient for table headings */
+  color: #ffffff;
+}
+
+.table tbody tr {
+  background: linear-gradient(90deg, #e0f2f7, #c1e4f0); /* Lighter blue gradient for table rows */
+  color: #212529; /* Dark text for table body */
+}
+
+.table-bordered {
+  border-color: #003366; /* Border color for tables */
+}
+
+.dark-mode .table thead {
+  background: linear-gradient(90deg, #001f3f, #002b5c); /* Dark mode navy blue gradient for table headings */
+}
+
+.dark-mode .table tbody tr {
+  background: linear-gradient(90deg, #000a14, #001f3f); /* Dark mode navy blue gradient for table rows */
+}
+
+/* Dark mode table borders: Set to light blue */
+.dark-mode .table-bordered {
+  border-color: #add8e6; /* Light blue border for tables in dark mode */
+}
+
+/* Chart Card specific styling */
+.card.chart-card {
+  background: linear-gradient(135deg, #e0f2f7, #add8e6); /* Light blue gradient for chart cards */
+  border: 1px solid #002b4d; /* Dark blue border for chart cards in light mode */
+  box-shadow: 0 0 15px rgba(0, 43, 77, 0.3); /* Highlighted light blue shadow for light mode */
+}
+
+.dark-mode .card.chart-card {
+  background: linear-gradient(135deg, #001f3f, #002b5c); /* Dark mode navy blue gradient for dark mode chart cards */
+  box-shadow: 0 0 15px rgba(173, 216, 230, 0.3); /* Highlighted light blue shadow for dark mode */
+}
+
+/* Dark mode text color for chart card content */
+.dark-mode .card.chart-card h1,
+.dark-mode .card.chart-card h2,
+.dark-mode .card.chart-card h3,
+.dark-mode .card.chart-card h4,
+.dark-mode .card.chart-card h5,
+.dark-mode .card.chart-card h6,
+.dark-mode .card.chart-card p,
+.dark-mode .card.chart-card span,
+.dark-mode .card.chart-card div,
+.dark-mode .card.chart-card li {
+  color: #fff !important;
+}
+
+.dark-mode .card.chart-card canvas {
+  color: #fff !important; /* This might not affect internal canvas text */
+}
+
+/* Last 5 Investments Card specific styling */
+.last-investments-card {
+    background-color: #add8e6; /* Light blue for "Last 5 Investments" card */
+    color: #212529; /* Dark text for contrast */
+}
+
+.last-investments-card .table thead {
+    background-color: #003366; /* Darker blue for table header in this card */
+    color: #ffffff;
+}
+
+.last-investments-card .table tbody tr {
+    background-color: #c1e4f0; /* Lighter blue for table rows in this card */
+    color: #212529;
+}
+
+/* Specific styles for CRUD form based on the UI kit */
+.crud-main {
+  max-width: 680px;
+  margin: 40px auto 80px auto;
+  padding: 0 2vw;
+}
+form.crud-form {
+  background-color: #e0f2f7; /* Light blue background */
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0, 43, 77, 0.07); /* Blue-ish shadow */
+  padding: 32px 28px 25px 28px;
+  margin-bottom: 40px;
+  border: 1px solid #002b4d; /* Navy blue border for buy stock form */
+}
+form.crud-form h2 {
+  text-align: center;
+  color: #002b4d; /* Deep navy blue for form heading */
+  margin-bottom: 28px;
+  font-weight: 700;
+  letter-spacing: .4px;
+}
+form.crud-form label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 13px;
+  display: block;
+  color: #212529; /* Dark text for labels */
+  font-size: 0.98rem;
+}
+form.crud-form select,
+form.crud-form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 14px;
+  margin-bottom: 7px;
+  border: 1.2px solid #add8e6; /* Light blue border */
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #f8f8f8; /* Light input background */
+  color: #212529; /* Dark text in inputs */
+  transition: border-color 0.15s;
+}
+form.crud-form input[readonly] {
+  color: #6c757d;
+  background: #e9ecef;
+  cursor: not-allowed;
+}
+form.crud-form select:focus,
+form.crud-form input:focus {
+  outline: none;
+  border-color: #002b4d; /* Deep navy blue border on focus */
+}
+.price-badge {
+  display: block;
+  margin: 6px 0 2px 0;
+  color: #003366; /* Darker blue for price badge */
+  font-size: 1.1em;
+}
+form.crud-form button {
+  width: 100%;
+  padding: 13px 0;
+  background: linear-gradient(92deg,#003366 50%, #0055aa 100%); /* Blue gradient button */
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(0, 43, 77, 0.11);
+  transition: background 0.16s;
+}
+form.crud-form button:hover {
+  background: linear-gradient(92deg, #002b4d 70%, #003366 100%); /* Darker gradient on hover */
+}
+
+.crud-list-section h3 {
+  color: #002b4d;
+  font-weight: 600;
+  margin-bottom: 19px;
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+.cards-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 16px;
+}
+@media (max-width: 700px) {
+  .crud-main {
+    max-width: 99vw;
+  }
+  .cards-list {
+    grid-template-columns: 1fr;
+  }
+  form.crud-form {
+    padding: 18px 3vw 15px 3vw;
+  }
+}
+.crud-card {
+  background: #ffffff; /* White card background */
+  border-radius: 16px;
+  padding: 22px 20px 14px 22px;
+  box-shadow: 0 2px 18px rgba(0, 43, 77, 0.06);
+  border: 1.3px solid #add8e6; /* Light blue card border */
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: box-shadow 0.17s, border-color 0.17s;
+}
+.crud-card:hover {
+  box-shadow: 0 8px 38px rgba(0, 43, 77, 0.14);
+  border-color: #002b4d; /* Deep navy blue border on hover */
+}
+.symbol-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 3px;
+}
+.symbol {
+  color: #002b4d; /* Deep navy blue for symbol */
+  font-weight: 700;
+  font-size: 1.08em;
+  letter-spacing: 0.7px;
+}
+.sector {
+  background: #c1e4f0; /* Lighter blue background for sector badge */
+  padding: 1.5px 8px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.89em;
+  color: #003366; /* Darker blue for sector text */
+  margin-left: 6px;
+  user-select: none;
+}
+.company {
+  font-weight: 600;
+  font-size: 1.03rem;
+  color: #212529; /* Dark text for company name */
+  margin-bottom: 5px;
+}
+.info-row {
+  color: #495057; /* Muted grey for info text */
+  font-size: 0.97em;
+  margin-bottom: 1px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.amount {
+  color: #002b4d; /* Deep navy blue for amount */
+  font-weight: 600;
+  font-size: 1.02em;
+  margin-top: 8px;
+}
+.remarks {
+  margin-top: 7px;
+  font-style: italic;
+  color: #6c757d; /* Subtle grey for remarks */
+  font-size: 0.97em;
+}
+
+/* Specific styles for About Us section */
+.section-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 30px;
+  box-shadow: 0 0 12px rgba(0, 43, 77, 0.05);
+}
