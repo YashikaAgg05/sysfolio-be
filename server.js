@@ -88,7 +88,7 @@ const mysql = require("mysql");
 const axios = require("axios");
 
 const db = require("./server/db"); // or just './db' if in same dir!
-const PORT = 3000;
+const PORT = 3001;
 
 // Middleware
 app.use(express.json());
